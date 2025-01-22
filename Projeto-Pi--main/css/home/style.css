@@ -27,6 +27,11 @@ body {
   align-items: center;
   padding: 1rem;
   border-bottom: 1px solid #ddd;
+  margin-bottom: 10rem;
+  position: fixed;
+  width: 100%;
+  z-index: 100000;
+  top: 0;
 }
 
 /* Estilo do Logo no Cabeçalho */
@@ -73,6 +78,7 @@ body {
 /* Estilos do Slider */
 .swiper {
   width: 100%;
+  margin-top: 4.2rem;
   height: 28rem; /* Altura fixa para o swiper */
 }
 
