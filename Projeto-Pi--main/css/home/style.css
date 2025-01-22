@@ -25,13 +25,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
   border-bottom: 1px solid #ddd;
-  margin-bottom: 10rem;
   position: fixed;
   width: 100%;
   z-index: 100000;
   top: 0;
+  padding: 0 1rem;
 }
 
 /* Estilo do Logo no Cabeçalho */
@@ -45,11 +44,12 @@ body {
 /* Estilos de Navegação */
 .nav a {
   display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 1px solid #ddd;
+  padding: 0 1rem;
   border-radius: 5px;
   text-decoration: none;
   color: var(--secondary-color);
+  color: #ffff;
+  
 }
 
 /* Botões de Login e Registro */
@@ -78,7 +78,7 @@ body {
 /* Estilos do Slider */
 .swiper {
   width: 100%;
-  margin-top: 4.2rem;
+  margin-top: 8rem;
   height: 28rem; /* Altura fixa para o swiper */
 }
 
@@ -442,14 +442,19 @@ footer nav ul li a:hover {
 } /* Ajustes para telas menores que 480px */
 @media (max-width: 480px) {
   .header__logo {
-    font-size: 20px;
+    width: 50px;
+    display: grid;
   }
   .nav {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
   }
   .nav a {
     margin: 0;
   }
+}
+
+@media (max-width: 500px){
+
 }
